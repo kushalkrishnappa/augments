@@ -68,4 +68,5 @@ bypass the collision. Details:
 ## Known follow-ups
 
 Post-release hardening (data-durability, workspace-safety edge cases, and instruction
-disambiguation) is tracked in [dsa-tutor-improvements.md](./dsa-tutor-improvements.md).
+disambiguation) is tracked in
+[issue #3](https://github.com/kushalkrishnappa/augments/issues/3).
