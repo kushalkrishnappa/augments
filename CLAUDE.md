@@ -54,20 +54,47 @@ This protocol applies when ending a Beads implementation workflow. It is subordi
 - Do not commit or push without clear authority from the active profile or the current user request.
 - If a required sync or push is blocked, stop and report the exact command and error.
 
-## Build & Test
-
-_Add your build and test commands here_
-
-```bash
-# Example:
-# npm install
-# npm test
-```
-
 ## Architecture Overview
 
-_Add a brief overview of your project architecture_
+`augments` is a git-based **Claude Code plugin marketplace** — there is no runtime or compiled
+artifact. `.claude-plugin/marketplace.json` is the index that lists every plugin; each plugin is a
+self-contained top-level directory (e.g. `dsa-tutor/`) carrying its own `.claude-plugin/plugin.json`
+and its skills/agents. Distribution is git: users run `/plugin marketplace add …` then
+`/plugin install <plugin>@augments`, and Claude Code pins each install to the manifest `version`.
+
+## Build & Test
+
+No build step — the repo is plain Markdown + JSON consumed directly by Claude Code. "Testing" means
+validation:
+
+- **Manifests are valid JSON** and marketplace entries match the on-disk plugin directories/versions
+  (`bd doctor` for tracker health; validate the JSON before bumping a `version`).
+- **Plugin skills ship evals** under `<plugin>/evals/`, runnable with `claude plugin eval`.
 
 ## Conventions & Patterns
 
-_Add your project-specific conventions here_
+### How this repo is laid out
+
+```
+augments/
+  .claude-plugin/marketplace.json   # lists every plugin in this repo
+  dsa-tutor/                        # one self-contained plugin
+    .claude-plugin/plugin.json
+    skills/dsa-tutor/
+      SKILL.md
+      references/
+    evals/                          # plugin evals (claude plugin eval)
+  docs/
+    dsa-tutor.md                    # one lean reference per plugin
+  README.md
+  LICENSE
+```
+
+Adding a plugin later is a drop-in: a new top-level directory with its own
+`.claude-plugin/plugin.json`, appended to `marketplace.json`. No existing plugin changes.
+
+### Documentation
+
+`docs/` holds exactly one lean reference per plugin, named `docs/<plugin-name>.md` (what it is,
+install, how to invoke, where state lives). Specs and design docs do **not** live in `docs/`. Keep
+the README plugin blurbs to a few lines that link out to the full `docs/<plugin>.md` reference.
