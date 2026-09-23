@@ -1,0 +1,14 @@
+{
+  "name": "augments",
+  "description": "KK's Claude Code skills and agents",
+  "owner": { "name": "Kushal Krishnappa" },
+  "plugins": [
+    {
+      "name": "dsa-tutor",
+      "description": "Socratic tutor for deep, durable understanding of data structures & algorithms",
+      "version": "0.1.0",
+      "source": "./dsa-tutor",
+      "author": { "name": "Kushal Krishnappa" }
+    }
+  ]
+}

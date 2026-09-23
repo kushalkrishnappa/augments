@@ -1,0 +1,8 @@
+{
+  "name": "dsa-tutor",
+  "description": "Socratic tutor for deep, durable understanding of data structures & algorithms",
+  "version": "0.1.0",
+  "author": { "name": "Kushal Krishnappa" },
+  "license": "MIT",
+  "keywords": ["dsa", "tutor", "learning", "algorithms", "data-structures"]
+}

@@ -1,6 +1,15 @@
-
-# Beads / Dolt files (added by bd init)
+# Beads / Dolt issue-tracker data — kept local, not published to this public repo
+.beads/
 .dolt/
 *.db
 .beads-credential-key
-.beads/proxieddb/
+
+# dsa-tutor learner state — never commit study progress or generated visuals
+.dsa-tutor/
+*.local.json
+
+# OS / editor noise
+.DS_Store
+
+# Eval run outputs (generated)
+dsa-tutor/evals/**/results/
