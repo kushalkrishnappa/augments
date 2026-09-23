@@ -61,8 +61,9 @@ updates. See `dsa-tutor/skills/dsa-tutor/references/progress_schema.md` for the 
 
 `dsa-tutor` was first authored inside a study repo; this plugin is the de-coupled, install-safe
 source of truth. If you also keep a project-level copy in some repo's `.claude/skills/`, that local
-copy shadows the plugin for the bare name — see
-[local-vs-plugin-dsa-tutor.md](./local-vs-plugin-dsa-tutor.md).
+copy shadows the plugin for the bare name; address the plugin explicitly as `dsa-tutor:dsa-tutor` to
+bypass the collision. Details:
+[issue #1](https://github.com/kushalkrishnappa/augments/issues/1).
 
 ## Known follow-ups
 
