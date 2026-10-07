@@ -13,3 +13,6 @@
 
 # Eval run outputs (generated)
 dsa-tutor/evals/**/results/
+
+# clarifying-questions eval outputs
+clarifying-questions/evals/**/results/

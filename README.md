@@ -12,6 +12,7 @@ plugins you want.
 ```
 /plugin marketplace add kushalkrishnappa/augments
 /plugin install dsa-tutor@augments
+/plugin install clarifying-questions@augments
 ```
 
 Update to the latest version everywhere with:
@@ -33,6 +34,15 @@ schedules review by spaced repetition. Just talk to it: "teach me graphs", "quiz
 "interview prep". Progress lives in a dedicated study workspace (default `~/dsa-tutor/`).
 
 Full reference: [docs/dsa-tutor.md](./docs/dsa-tutor.md)
+
+### `clarifying-questions`
+
+Teach + drill **TAP (Test · Ask · Plan)** — a memorable structure for the first minutes of a coding
+interview: which clarifying questions to ask about constraints and edge cases, and what to do when your
+mind goes blank. Works for DSA, whiteboard, and OOD problems. Stateless. "Teach me how to start a
+problem", "drill me on clarifying questions".
+
+Full reference: [docs/clarifying-questions.md](./docs/clarifying-questions.md)
 
 ## License
 
