@@ -1,0 +1,8 @@
+{
+  "name": "clarifying-questions",
+  "description": "Teach and drill a memorable structure for the first minutes of a coding interview — clarifying questions and breaking brain fog",
+  "version": "0.1.0",
+  "author": { "name": "Kushal Krishnappa" },
+  "license": "MIT",
+  "keywords": ["interview", "coding-interview", "clarifying-questions", "dsa", "ood", "tutor"]
+}

@@ -9,6 +9,13 @@
       "version": "0.1.0",
       "source": "./dsa-tutor",
       "author": { "name": "Kushal Krishnappa" }
+    },
+    {
+      "name": "clarifying-questions",
+      "description": "Teach and drill a memorable structure for the first minutes of a coding interview — clarifying questions and breaking brain fog",
+      "version": "0.1.0",
+      "source": "./clarifying-questions",
+      "author": { "name": "Kushal Krishnappa" }
     }
   ]
 }
